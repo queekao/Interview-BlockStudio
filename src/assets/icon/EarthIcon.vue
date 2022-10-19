@@ -226,8 +226,8 @@ export default {
   watch: {
     animationAppear: function (oldVal, newVal) {
       // console.log(oldVal, newVal);
-      if (newVal < 1) {
-        // this.animationAppear = 0;
+      if (newVal < 0.9 && newVal !== 0) {
+        this.animationAppear = -10;
       }
     },
   },

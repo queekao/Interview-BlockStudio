@@ -40,7 +40,6 @@ body {
   }
 }
 #app {
-  /* eslint-disable */
   box-sizing: border-box;
   position: relative;
 }

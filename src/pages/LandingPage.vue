@@ -44,7 +44,7 @@ export default {
     );
     gsap.fromTo(
       ".service",
-      {y: -100},
+      {y: 0},
       {
         y: 0,
         duration: 2,

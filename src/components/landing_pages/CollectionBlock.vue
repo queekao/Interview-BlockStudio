@@ -93,7 +93,7 @@ export default {
     onMounted(() => {
       gsap.fromTo(
         ".collection__title",
-        {x: -200, opacity: 0},
+        {x: -400, opacity: 0},
         {x: 0, opacity: 1, duration: 1, scrollTrigger: ".swiper__btn"}
       );
     });

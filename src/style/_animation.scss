@@ -48,18 +48,6 @@
     stroke-dashoffset: 200;
   }
   100% {
-    stroke-dashoffset: 10;
-  }
-}
-//Rotate
-@keyframes rotation {
-  0% {
-    stroke-dashoffset: 300;
-  }
-  50% {
-    stroke-dashoffset: 200;
-  }
-  100% {
-    stroke-dashoffset: 10;
+    stroke-dashoffset: 0;
   }
 }

@@ -104,6 +104,7 @@ section {
       column-gap: 1rem;
       @include respond(TabPort) {
         align-self: center;
+        margin-right: 0rem;
       }
       &-text {
         @include font-body-1;

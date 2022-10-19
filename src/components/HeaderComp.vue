@@ -52,7 +52,7 @@ export default {
       position: fixed;
       padding: 0;
       transition: all 0.5s;
-      height: 100vh;
+      height: 100%;
       width: 0;
       top: 0;
       left: 0%;
@@ -76,15 +76,25 @@ export default {
       color: $color-black-1;
       transition: all 0.3s;
       cursor: pointer;
-      @include respond(Phone) {
-        font-size: 3.6rem;
-        color: $color-white-1;
+      &::selection {
+        background-color: transparent;
       }
       &:hover {
         color: $color-primary-2;
       }
       &:active {
         color: $color-primary-0;
+      }
+      @include respond(Phone) {
+        font-size: 3.6rem;
+        color: $color-white-1;
+
+        &:hover {
+          color: $color-white-1;
+        }
+        &:active {
+          color: $color-white-1;
+        }
       }
     }
     &-itemWrapper {

@@ -117,14 +117,14 @@ export default {
       observer: Object,
       window: window,
       svg: "",
-      animationAppear: "",
+      animationAppear: 0,
     };
   },
   watch: {
     animationAppear: function (oldVal, newVal) {
-      // console.log(oldVal, newVal);
-      if (newVal < 1) {
-        // this.animationAppear = 0;
+      // console.log(oldVal, "newvla", newVal);
+      if (newVal < 0.9 && newVal !== 0) {
+        this.animationAppear = -10;
       }
     },
   },
