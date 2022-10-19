@@ -35,7 +35,7 @@ export default {
   mounted() {
     gsap.fromTo(
       ".collection",
-      {y: -100},
+      {y: -150},
       {
         y: 0,
         duration: 2,

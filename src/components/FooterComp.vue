@@ -22,6 +22,7 @@ export default {};
   margin: 0 4rem;
   margin-top: 20rem;
   padding: 4rem 0;
+  background: transparent;
   /* @include respond(TabPort) {
     justify-content: space-between;
 
