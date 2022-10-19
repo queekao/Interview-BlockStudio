@@ -43,7 +43,7 @@ export default {
     gsap.fromTo(
       ".marquee__title",
       {x: -200, opacity: 0},
-      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".contact"}
+      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".text2"}
     );
     gsap.fromTo(
       ".marquee__block",

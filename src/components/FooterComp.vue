@@ -20,14 +20,20 @@ export default {};
   justify-content: space-around;
   align-items: center;
   margin: 0 4rem;
-  margin-top: 12rem;
-  margin-bottom: 5rem;
-  @include respond(Phone) {
+  margin-top: 20rem;
+  padding: 4rem 0;
+  /* @include respond(TabPort) {
+    justify-content: space-between;
+
+    margin-top: 0;
+  } */
+  @include respond(TabPort) {
     flex-direction: column;
     gap: 2rem;
     margin-top: 6rem;
     margin-left: 2.4rem;
     margin-right: 0;
+    width: 80%;
     align-items: flex-start;
   }
   &__link {

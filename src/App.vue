@@ -9,8 +9,8 @@ export default {
   components: {LandingPage},
   mounted() {
     //Reset
-    let appAllPage = document.getElementById("app");
-    appAllPage.style.height = window.innerHeight + "px";
+    // let appAllPage = document.getElementById("app");
+    // appAllPage.style.height = window.innerHeight + "px";
   },
 };
 </script>

@@ -32,7 +32,7 @@ export default {
     gsap.fromTo(
       ".contact__title",
       {x: -200, opacity: 0},
-      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".contact"}
+      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".contact__content-img"}
     );
   },
   methods: {

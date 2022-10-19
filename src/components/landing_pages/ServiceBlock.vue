@@ -26,7 +26,7 @@ export default {
     gsap.fromTo(
       ".service__title",
       {x: -200, opacity: 0},
-      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".marquee"}
+      {x: 0, opacity: 1, duration: 1, scrollTrigger: ".service__item-clock"}
     );
   },
 };

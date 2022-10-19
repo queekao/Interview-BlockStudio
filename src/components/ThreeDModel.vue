@@ -20,119 +20,6 @@ import {onMounted} from "vue";
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 export default {
-  // data: function () {
-  //   const canvas = document.getElementById("renderCanvas");
-  //   let renderer = new WebGLRenderer({antialias: true});
-  //   let scene = new Scene();
-  //   let camera = new PerspectiveCamera(
-  //     100,
-  //     window.innerWidth / window.innerHeight,
-  //     0.01,
-  //     1
-  //   );
-  //   return {
-  //     scene: scene,
-  //     canvas: canvas,
-  //     camera: camera,
-  //     controls: [],
-  //     renderer: renderer,
-  //     // loader: loader,
-  //     // light: light,
-  //     // cube: cube,
-  //     // axes: axes,
-  //     speed: 0.01,
-  //   };
-  // },
-  // computed: {
-  //   rotate: function () {
-  //     if (this.speed === "") {
-  //       return 0;
-  //     } else {
-  //       return this.speed;
-  //     }
-  //   },
-  // },
-  // created: function () {
-  //   //Controller
-  //   // this.controls = new TrackballControls(
-  //   //   this.camera,
-  //   //   this.renderer.domElement
-  //   // );
-  //   // this.controls.rotateSpeed = 1.0;
-  //   // this.controls.zoomSpeed = 5;
-  //   // this.controls.panSpeed = 0.8;
-  //   // this.controls.noZoom = false;
-  //   // this.controls.noPan = false;
-  //   // this.controls.staticMoving = true;
-  //   // this.controls.dynamicDampingFactor = 0.3;
-  //   //
-  // },
-
-  // mounted: function () {
-  //   console.log(this.renderer.domElement);
-  //   // window.addEventListener("resize", () => {
-  //   // });
-  //   this.createScene();
-  //   // this.animate();
-  // },
-
-  // methods: {
-  //   animate: function () {
-  //     requestAnimationFrame(this.animate);
-  //     this.renderer.render(this.scene, this.camera);
-  //     this.controls.update();
-  //   },
-  //   createScene: function () {
-  //     let scene = new Scene();
-  //     scene.background = new Color(0xdddddd);
-  //     let light = new AmbientLight(0x404040, 100);
-  //     let renderer = this.renderer;
-  //     let loader = new GLTFLoader();
-  //     let camera = new PerspectiveCamera(
-  //       100,
-  //       window.innerWidth / window.innerHeight,
-  //       0.01,
-  //       1
-  //     );
-  //     // OrbitControls.dampingFactor = 0.25;
-  //     // OrbitControls.enableZoom = false;
-
-  //     // renderer.setSize(window.innerWidth, window.innerHeight);
-  //     this.$refs.canvas.appendChild(renderer.domElement);
-  //     // light.position.set(0, 0, 10);
-  //     // camera.position.z = 100;
-  //     // camera.position.y = 100;
-  //     // camera.position.x = 800;
-  //     // camera.rotation.y = (45 / 180) * Math.PI;
-
-  //     loader.load(
-  //       "ring.glb",
-  //       function (gltf) {
-  //         let ring = gltf.scene.children[1];
-  //         ring.scale.set(3, 3, 3);
-  //         ring.castShadow = true;
-  //         ring.receivShadow = true;
-  //         scene.add(gltf.scene);
-  //         // light.position.set(2, 2, 5);
-  //         scene.add(light);
-  //         camera.position.set(0, 0, 1);
-
-  //         console.log(ring);
-  //         renderer.render(scene, camera);
-  //       },
-  //       undefined,
-  //       (error) => {
-  //         console.log(error);
-  //       }
-  //     );
-  //     let controls = new OrbitControls(camera, renderer.domElement);
-  //     console.log(controls);
-  //     controls.autoRotate = true;
-  //     controls.autoRotateSpeed = 10;
-  //     controls.enableDamping = true;
-  //     controls.dampingFactor = 0.01;
-  //   },
-  // },
   setup() {
     let scene = new Scene();
     scene.background = "transparent";
@@ -206,18 +93,9 @@ export default {
 #renderCanvas {
   @include positionCenter(horizontal);
   top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
-<!-- <template>
-  
-</template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style> -->

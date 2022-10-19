@@ -6,13 +6,13 @@ const app = createApp(App)
 app.use(LottieAnimation)
 app.directive('display', (el, binding) => {
     // console.log(binding.value);
-    if (binding.value < 1.3) {
+    if (binding.value < 0.75) {
         // el.classList.add("svgAnimation")
         // el.style.opacity = 1
         // el.style.transition = 'all 1s'
         el.style.display = 'block'
         // el.style.visibility = 'visible'
-    } else if (binding.value > 1) {
+    } else if (binding.value > 0.75) {
         // el.style.opacity = 0
         el.style.display = 'none'
         // el.style.visibility = 'hidden'

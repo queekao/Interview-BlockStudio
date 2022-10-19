@@ -51,7 +51,7 @@ export default {
     gsap.registerPlugin(ScrollTrigger);
     const windowWidth = window.innerWidth;
     const onSwiper = (swiper) => {
-      console.log(swiper);
+      // console.log(swiper);
       //next
       swiper.navigation.$nextEl[0].style.color = "#d68f4c";
       swiper.navigation.$nextEl[0].style.background = "#f0ede8";
@@ -94,7 +94,7 @@ export default {
       gsap.fromTo(
         ".collection__title",
         {x: -200, opacity: 0},
-        {x: 0, opacity: 1, duration: 1, scrollTrigger: ".service"}
+        {x: 0, opacity: 1, duration: 1, scrollTrigger: ".swiper__btn"}
       );
     });
     return {
