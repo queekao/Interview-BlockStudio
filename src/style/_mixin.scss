@@ -1,0 +1,131 @@
+@import "_variable.scss";
+@import "_utils.scss";
+@mixin font-heading-1 {
+  font-size: 9.6rem;
+  line-height: 0.9;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+@mixin font-heading-2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+@mixin font-heading-3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+@mixin font-heading-4 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+@mixin font-body-1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@mixin font-body-2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+@mixin font-button {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+@mixin font-display-1 {
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+@mixin font-display-2 {
+  font-weight: 400;
+  font-size: 11.2rem;
+  line-height: 1.2;
+}
+//button
+@mixin buttonSolid($color: null) {
+  padding: 1.6rem 4rem;
+  box-shadow: $box-shadow-1;
+  background-color: $color-primary-4;
+  border-radius: 72px;
+}
+@mixin buttonCTA($color: null, $size: null) {
+  @include btnReset;
+  box-shadow: $box-shadow-1;
+  border-radius: 120px;
+  position: relative;
+  transition: all 0.3s;
+
+  @if ($size == "small") {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+  @if ($size == "middle") {
+    height: 6.4rem;
+    width: 6.4rem;
+  }
+  @if ($size == "big") {
+    height: 14.4rem;
+    width: 14.4rem;
+  }
+  @if ($color == "arrow-light") {
+    background: no-repeat url("~@/assets/icon/arrow.svg");
+    background-position: center;
+    border: 1px solid $color-white-1;
+    &:hover {
+      background: no-repeat url("~@/assets/icon/arrowPrimary.svg"),
+        $color-white-1;
+      background-position: center;
+    }
+    &:active {
+      background: no-repeat url("~@//assets/icon/arrowPrimary.svg"),
+        $color-primary-3;
+      background-position: center;
+    }
+  }
+  @if ($color == "arrow-gray") {
+    background: no-repeat url("~@/assets/icon/arrowGray.svg"), $color-white-1;
+    background-position: center;
+    border: 1px solid $color-black-2;
+    &:hover {
+      background: no-repeat url("~@/assets/icon/arrow.svg"), $color-primary-2;
+      background-position: center;
+      border: 1px solid $color-primary-2;
+    }
+    &:active {
+      background: no-repeat url("~@//assets/icon/arrow.svg"), $color-primary-0;
+      background-position: center;
+      border: 1px solid $color-primary-0;
+    }
+  }
+}
+////line
+@mixin line($color: null, $size: null) {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  height: 0.5px;
+  transform: rotate(110deg);
+  @if ($color == "light") {
+    background-color: $color-white-1;
+  }
+  @if ($color == "primary") {
+    background-color: $color-primary-1;
+  }
+  @if ($color == "primary2") {
+    background-color: $color-primary-2;
+  }
+  @if ($color == "gray") {
+    background-color: $color-gray-1;
+  }
+  @if ($size == "big") {
+    width: 9.6rem;
+  }
+}

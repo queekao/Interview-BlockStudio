@@ -1,0 +1,65 @@
+//Marquee
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes scrollRight2 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes scrollRight3 {
+  from {
+    transform: translateX(-400%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+//draw
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+//Rotate
+@keyframes rotation {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
