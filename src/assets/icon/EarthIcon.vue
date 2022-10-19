@@ -226,7 +226,7 @@ export default {
   watch: {
     animationAppear: function (oldVal, newVal) {
       // console.log(oldVal, newVal);
-      if (newVal < 0.9 && newVal !== 0) {
+      if (newVal < 0.75 && newVal !== 0) {
         this.animationAppear = -10;
       }
     },
@@ -249,7 +249,7 @@ export default {
 svg path {
   /*The stroke-dasharray attribute is presentation attribute 
   defining the pattern of dashes and gaps used to paint the outline of the shape */
-  stroke-dasharray: 300;
+  stroke-dasharray: 305;
   animation: draw 3s forwards;
   grid-row: 1/2;
 }

@@ -123,7 +123,7 @@ export default {
   watch: {
     animationAppear: function (oldVal, newVal) {
       // console.log(oldVal, "newvla", newVal);
-      if (newVal < 0.9 && newVal !== 0) {
+      if (newVal < 0.75 && newVal !== 0) {
         this.animationAppear = -10;
       }
     },
